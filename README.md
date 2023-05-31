@@ -17,8 +17,11 @@
     <a href="https://github.com/tremorlabs/tremor/blob/main/License">
       <img alt="License Apache 2.0" src="https://img.shields.io/badge/license-Apache 2.0-blue.svg?style=flat&color=5C9BA1" height="20" width="auto">
     </a>
+    <a href="https://join.slack.com/t/tremor-community/shared_invite/zt-1u8jqmcmq-Fdr9B6MbnO7u8FkGh~2Ylg">
+      <img src="https://img.shields.io/badge/Join-important.svg?color=4A154B&label=Slack&logo=slack" alt="Join Slack" />
+    </a>
     <a href="https://twitter.com/intent/follow?screen_name=tremorlabs">
-      <img src="https://img.shields.io/twitter/follow/tremorlabs?style=social" alt="Follow" />
+      <img src="https://img.shields.io/twitter/follow/tremorlabs?style=social" alt="Follow on Twitter" />
     </a>
   </div>
   <h3 align="center">
@@ -114,19 +117,6 @@ Start the dev server
 npm run dev
 ```
 
-**⚠️ Note:** Since we have not fully migrated to Next.js 13 yet, if you are using the `app` directory introduced in Next.js 13, wrap your tremor components in another component by using the `"use client"` directive. More infos on the directive and the usage of third-party libraries in Next.js 13 can be found in the [Next.js docs](https://beta.nextjs.org/docs/rendering/server-and-client-components#third-party-packages).
-
-If you get the following error while using the `app` directory: `TypeError: Super expression must either be null or a function`, then add the [`serverComponentsExternalPackages`](https://beta.nextjs.org/docs/api-reference/next.config.js#servercomponentsexternalpackages) to your `next.config.js`.
-
-```diff
-const nextConfig = {
-  experimental: {
-    appDir: true,
-+    serverComponentsExternalPackages: ['@tremor/react'],
-  },
-}
-```
-<br>
 <br>
 
 **💡 Hint:** Since we are in beta, please be aware that there might be breaking changes in the future.
